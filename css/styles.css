@@ -1,23 +1,32 @@
 :root {
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
+
   --accent-color-link: #404bbf;
-  --secondary-color: #2e2f42;
+
   --primary-color: #434455;
+  --secondary-color: #2e2f42;
+
   --primary-color-link-navigation: #2e2f42;
   --primary-color-link-address: #434455;
+
+  --hero-color: #ffffff;
   --bacground-hero-btn: #4d5ae5;
   --accent-background-hero-btn: #404bbf;
+
   --background-team: #f4f4fd;
   --background-team-card: #ffffff;
+
   --background-bady: #ffffff;
   --background-hero: #2e2f42;
+
   --background-footer: #2e2f42;
+  --footer-description-color: #f4f4fd;
+
   --logo-color: #4d5ae5;
   --logo-header-color: #2e2f42;
   --logo-footer-color: #f4f4fd;
-  --hero-color: #ffffff;
-  --footer-description-color: #f4f4fd;
+
   --clients-filter-btn-color: #4d5ae5;
   --clients-filter-btn-color-accent: #ffffff;
   --clients-filter-btn-background: #f4f4fd;
