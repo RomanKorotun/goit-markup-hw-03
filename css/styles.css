@@ -3,35 +3,39 @@
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 
-  --accent-color-link: #404bbf;
+  /* Colors-txt */
+  --primary-txt-cl: #434455;
+  --secondary-txt-cl: #2e2f42;
 
-  --primary-color: #434455;
-  --secondary-color: #2e2f42;
+  --logo-cl-first: #4d5ae5;
+  --logo-header-cl-last: #2e2f42;
+  --logo-footer-cl-last: #f4f4fd;
 
-  --primary-color-link-navigation: #2e2f42;
-  --primary-color-link-address: #434455;
+  --cl-link-navigation: #2e2f42;
+  --cl-link-address: #434455;
+  --accent-cl-link: #404bbf;
 
-  --hero-color: #ffffff;
-  --bacground-hero-btn: #4d5ae5;
-  --accent-background-hero-btn: #404bbf;
+  --hero-txt-color: #ffffff;
 
-  --background-team: #f4f4fd;
-  --background-team-card: #ffffff;
+  --cl-clients-filter-btn: #4d5ae5;
+  --accent-cl-clients-filter-btn: #ffffff;
 
-  --background-bady: #ffffff;
-  --background-hero: #2e2f42;
+  --cl-desc-footer: #f4f4fd;
 
-  --background-footer: #2e2f42;
-  --footer-description-color: #f4f4fd;
+  /* Bg-colors */
+  --bg-cl-bady: #ffffff;
 
-  --logo-color: #4d5ae5;
-  --logo-header-color: #2e2f42;
-  --logo-footer-color: #f4f4fd;
+  --bg-cl-hero: #2e2f42;
+  --bg-cl-hero-btn: #4d5ae5;
+  --accent-bg-cl-hero-btn: #404bbf;
 
-  --clients-filter-btn-color: #4d5ae5;
-  --clients-filter-btn-color-accent: #ffffff;
-  --clients-filter-btn-background: #f4f4fd;
-  --clients-filter-btn-background-accent: #404bbf;
+  --bg-cl-section-team: #f4f4fd;
+  --bg-cl-section-team-card: #ffffff;
+
+  --bg-cl-footer: #2e2f42;
+
+  --bg-cl-clients-filter-btn: #f4f4fd;
+  --accent-bg-cl-clients-filter-btn: #404bbf;
 }
 
 .list {
@@ -43,8 +47,8 @@
 
 body {
   font-family: var(--primary-font);
-  color: var(--primary-color);
-  background: var(--background-bady);
+  color: var(--primary-txt-cl);
+  background: var(--bg-cl-bady);
 }
 
 /* ============================== Components ============================== */
@@ -56,7 +60,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--logo-color);
+  color: var(--logo-cl-first);
 }
 
 /* ============================== /Components ============================== */
@@ -64,7 +68,7 @@ body {
 /* ============================== Header ============================== */
 
 .logo-header-color {
-  color: var(--logo-header-color);
+  color: var(--logo-header-cl-last);
 }
 
 .header-menu-link {
@@ -72,12 +76,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-color-link-navigation);
+  color: var(--cl-link-navigation);
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-  color: var(--accent-color-link);
+  color: var(--accent-cl-link);
 }
 
 .address {
@@ -88,12 +92,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-color-link-address);
+  color: var(--cl-link-address);
 }
 
 .contact-link:hover,
 .contact-link:focus {
-  color: var(--accent-color-link);
+  color: var(--accent-cl-link);
 }
 
 /* ============================== /Header ============================== */
@@ -101,7 +105,7 @@ body {
 /* ============================== Hero ============================== */
 
 .hero {
-  background: var(--background-hero);
+  background: var(--bg-cl-hero);
 }
 .hero-title {
   font-weight: 700;
@@ -109,7 +113,7 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--hero-color);
+  color: var(--hero-txt-color);
 }
 
 .hero-modal-btn {
@@ -118,13 +122,13 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--hero-color);
-  background: var(--bacground-hero-btn);
+  color: var(--hero-txt-color);
+  background: var(--bg-cl-hero-btn);
   cursor: pointer;
 }
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
-  background: var(--accent-background-hero-btn);
+  background: var(--accent-bg-cl-hero-btn);
 }
 
 /* ============================== /Hero ============================== */
@@ -136,7 +140,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--secondary-color);
+  color: var(--secondary-txt-cl);
 }
 .features-list-description {
   font-weight: 400;
@@ -156,7 +160,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  color: var(--secondary-color);
+  color: var(--secondary-txt-cl);
 }
 
 /* ============================== /Projects ============================== */
@@ -164,7 +168,7 @@ body {
 /* ============================== Team ============================== */
 
 .team {
-  background: var(--background-team);
+  background: var(--bg-cl-section-team);
 }
 
 .team-title {
@@ -174,10 +178,10 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  color: var(--secondary-color);
+  color: var(--secondary-txt-cl);
 }
 .team-list-item {
-  background: var(--background-team-card);
+  background: var(--bg-cl-section-team-card);
 }
 .team-list-title {
   font-weight: 500;
@@ -185,7 +189,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-  color: var(--secondary-color);
+  color: var(--secondary-txt-cl);
 }
 .team-list-profession {
   font-weight: 400;
@@ -207,28 +211,28 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  background: var(--clients-filter-btn-background);
-  color: var(--clients-filter-btn-color);
+  background: var(--bg-cl-clients-filter-btn);
+  color: var(--cl-clients-filter-btn);
   cursor: pointer;
 }
 .clients-filter-btn:hover,
 .clients-filter-btn:focus {
-  background: var(--clients-filter-btn-background-accent);
-  color: var(--clients-filter-btn-color-accent);
+  background: var(--accent-bg-cl-clients-filter-btn);
+  color: var(--accent-cl-clients-filter-btn);
 }
 .client-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--secondary-color);
+  color: var(--secondary-txt-cl);
 }
 .client-list-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-color);
+  color: var(--primary-txt-cl);
 }
 
 /* ============================== /Portfolio clients ============================== */
@@ -236,17 +240,17 @@ body {
 /* ============================== Footer ============================== */
 
 .logo-footer-color {
-  color: var(--logo-footer-color);
+  color: var(--logo-footer-cl-last);
 }
 .footer {
-  background: var(--background-footer);
+  background: var(--bg-cl-footer);
 }
 .footer-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--footer-description-color);
+  color: var(--cl-desc-footer);
 }
 
 /* ============================== /Footer ============================== */
