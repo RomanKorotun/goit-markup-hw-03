@@ -48,7 +48,7 @@
 body {
   font-family: var(--primary-font);
   color: var(--primary-txt-cl);
-  background: var(--bg-cl-bady);
+  background-color: var(--bg-cl-bady);
 }
 
 /* ============================== Components ============================== */
@@ -117,7 +117,7 @@ body {
 /* ============================== Hero ============================== */
 
 .hero {
-  background: var(--bg-cl-hero);
+  background-color: var(--bg-cl-hero);
 }
 .hero-title {
   font-weight: 700;
@@ -135,12 +135,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--hero-txt-color);
-  background: var(--bg-cl-hero-btn);
+  background-color: var(--bg-cl-hero-btn);
   cursor: pointer;
 }
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
-  background: var(--accent-bg-cl-hero-btn);
+  background-color: var(--accent-bg-cl-hero-btn);
 }
 
 /* ============================== /Hero ============================== */
@@ -180,7 +180,7 @@ body {
 /* ============================== Team ============================== */
 
 .team {
-  background: var(--bg-cl-section-team);
+  background-color: var(--bg-cl-section-team);
 }
 
 .team-title {
@@ -193,7 +193,7 @@ body {
   color: var(--secondary-txt-cl);
 }
 .team-list-item {
-  background: var(--bg-cl-section-team-card);
+  background-color: var(--bg-cl-section-team-card);
 }
 .team-list-title {
   font-weight: 500;
@@ -223,13 +223,13 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  background: var(--bg-cl-clients-filter-btn);
+  background-color: var(--bg-cl-clients-filter-btn);
   color: var(--cl-clients-filter-btn);
   cursor: pointer;
 }
 .clients-filter-btn:hover,
 .clients-filter-btn:focus {
-  background: var(--accent-bg-cl-clients-filter-btn);
+  background-color: var(--accent-bg-cl-clients-filter-btn);
   color: var(--accent-cl-clients-filter-btn);
 }
 .client-list-title {
@@ -255,7 +255,7 @@ body {
   color: var(--logo-footer-cl-last);
 }
 .footer {
-  background: var(--bg-cl-footer);
+  background-color: var(--bg-cl-footer);
 }
 .footer-description {
   font-weight: 400;
