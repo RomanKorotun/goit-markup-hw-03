@@ -451,12 +451,12 @@ body {
 }
 
 .clients-card-content {
-  border-top: none;
   padding-top: 32px;
   padding-right: 16px;
   padding-bottom: 32px;
   padding-left: 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 /* ============================== /Portfolio clients ============================== */
