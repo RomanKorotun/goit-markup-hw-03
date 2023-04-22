@@ -405,7 +405,7 @@ body {
 }
 
 .client-list-item {
-  flex-basis: calc(((100% - 2 * 24px)) - 4px) / 3;
+  flex-basis: calc(100% - var(--indent) * (var(--items) - 1)) / 4;
 }
 
 .clients-filter-btn {
@@ -452,9 +452,10 @@ body {
 
 .clients-card-content {
   padding-top: 32px;
-  margin-right: 16px;
+  padding-right: 16px;
   padding-bottom: 32px;
-  margin-left: 16px;
+  padding-left: 16px;
+  border: 1px solid #e7e9fc;
 }
 
 /* ============================== /Portfolio clients ============================== */
