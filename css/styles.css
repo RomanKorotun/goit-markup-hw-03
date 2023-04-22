@@ -216,7 +216,7 @@ body {
   background-color: var(--bg-cl-hero);
 }
 
-.hero-container {
+.hero {
   padding-top: 188px;
   padding-bottom: 188px;
 }
