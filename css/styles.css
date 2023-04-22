@@ -36,11 +36,65 @@
 
   --bg-cl-clients-filter-btn: #f4f4fd;
   --accent-bg-cl-clients-filter-btn: #404bbf;
+
+  /* Others */
+  --cl-border-header: #e7e9fc;
+  --box-shadow-hero-modal-btn: rgba(0, 0, 0, 0.15);
+  --indent: 24px;
+}
+
+.features-list-item {
+  --items: 4;
+}
+
+.projects-list-item {
+  --items: 3;
+}
+
+.team-list-item {
+  --items: 4;
+}
+
+.client-list-item {
+  --items: 9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
 }
 
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
@@ -62,6 +116,7 @@ body {
   text-transform: uppercase;
   color: var(--logo-cl-first);
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,9 +130,50 @@ body {
   overflow: hidden;
 }
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* ============================== /Components ============================== */
 
 /* ============================== Header ============================== */
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cl-border-header);
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
+
+.logo-header {
+  margin-right: 76px;
+}
 
 .logo-header-color {
   color: var(--logo-header-cl-last);
@@ -119,7 +215,17 @@ body {
 .hero {
   background-color: var(--bg-cl-hero);
 }
+
+.hero-container {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .hero-title {
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -129,6 +235,17 @@ body {
 }
 
 .hero-modal-btn {
+  display: block;
+  min-width: 169px;
+  min-height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 14px;
+  padding-right: 30px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  box-shadow: 0px 4px 4px var(--box-shadow-hero-modal-btn);
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -147,7 +264,19 @@ body {
 
 /* ============================== Features ============================== */
 
+.features-list {
+  display: flex;
+  gap: var(--indent);
+}
+
+.features-list-item {
+  flex-basis: calc(
+    (100% - var(var(--indent)) * (var(--items) - 1)) / var(--items)
+  );
+}
+
 .features-list-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -166,6 +295,7 @@ body {
 /* ============================== Projects ============================== */
 
 .projects-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -173,6 +303,18 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--secondary-txt-cl);
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.projects-list-item {
+  flex-basis: calc(
+    (100% - var(var(--indent)) * (var(--items) - 1)) / var(--items)
+  );
 }
 
 /* ============================== /Projects ============================== */
@@ -184,6 +326,7 @@ body {
 }
 
 .team-title {
+  margin-bottom: 42px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -192,10 +335,30 @@ body {
   text-transform: capitalize;
   color: var(--secondary-txt-cl);
 }
-.team-list-item {
-  background-color: var(--bg-cl-section-team-card);
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
 }
+
+.team-list-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  background-color: var(--bg-cl-section-team-card);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-team-content {
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
 .team-list-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -203,6 +366,7 @@ body {
   text-align: center;
   color: var(--secondary-txt-cl);
 }
+
 .team-list-profession {
   font-weight: 400;
   font-size: 16px;
@@ -215,7 +379,34 @@ body {
 
 /* ============================== Portfolio clients ============================== */
 
+.clients-container {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.clients-filter-list {
+  display: flex;
+  gap: var(--indent);
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.client-list-item {
+  flex-basis: calc((100% - var(var(--indent)) * (var(--items) - 1)) / 3);
+  outline: 1px solid #e7e9fc;
+}
+
 .clients-filter-btn {
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  padding-left: 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -226,6 +417,9 @@ body {
   background-color: var(--bg-cl-clients-filter-btn);
   color: var(--cl-clients-filter-btn);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .clients-filter-btn:hover,
 .clients-filter-btn:focus {
@@ -233,6 +427,7 @@ body {
   color: var(--accent-cl-clients-filter-btn);
 }
 .client-list-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -247,9 +442,24 @@ body {
   color: var(--primary-txt-cl);
 }
 
+.clients-card-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /* ============================== /Portfolio clients ============================== */
 
 /* ============================== Footer ============================== */
+
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 16px;
+}
 
 .logo-footer-color {
   color: var(--logo-footer-cl-last);
@@ -258,6 +468,7 @@ body {
   background-color: var(--bg-cl-footer);
 }
 .footer-description {
+  max-width: 264px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
